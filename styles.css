@@ -1,8 +1,7 @@
-.flip-animation {
-  animation: flip 2s ease-in-out;
-}
+var counterValue = 0;
+var counterElement = document.getElementById('counterValue');
 
-@keyframes flip {
-  0% { transform: rotateY(0); }
-  100% { transform: rotateY(360deg); }
-}
+setInterval(function() {
+  counterValue++;
+  counterElement.textContent = counterValue;
+}, 1000);
