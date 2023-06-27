@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Show Image on Button Click</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-  <h1>Show Image on Button Click</h1>
-  
-  <button id="showImageBtn">Show Image</button>
-  
-  <div id="imageContainer">
-    <img id="myImage" src="#" alt="Image">
-  </div>
-  
-  <script src="script.js"></script>
-</body>
-</html>
+#imageContainer {
+  margin-top: 20px;
+  display: none;
+}
+
+#myImage {
+  max-width: 300px;
+  max-height: 300px;
+}
