@@ -6,7 +6,7 @@ var myImage = document.getElementById('myImage');
 // Add a click event listener to the button
 showImageBtn.addEventListener('click', function() {
   // Set the image source
-  myImage.src = 'path/to/your/image.jpg';
+  myImage.src = 'quim1.jpg';
   
   // Show the image container
   imageContainer.style.display = 'block';
