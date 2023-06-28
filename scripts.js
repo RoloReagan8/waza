@@ -1,9 +1,9 @@
-#counterMessage {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
+document.addEventListener("DOMContentLoaded", function() {
+  var counterValue = 0;
+  var counterElement = document.getElementById('counterValue');
 
-#counterValue {
-  font-size: 48px;
-  font-weight: bold;
-}
+  setInterval(function() {
+    counterValue++;
+    counterElement.textContent = counterValue;
+  }, 1000);
+});
