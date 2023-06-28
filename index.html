@@ -1,17 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Counter Example</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    body {
+      background-image: url('path/to/your/custom/wallpaper.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .counter {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: lightblue;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: white;
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Counter Example</h1>
-  
-  <div id="counterMessage">¿Cuántos euros debe Quim?</div>
-  
-  <div id="counterValue">0</div>
-  
-  <script src="script.js"></script>
+  <div class="counter" id="counter">
+    ¿Cuántos euros me debe Quim <span id="count">0</span> euros?
+  </div>
+
+  <script>
+    var countElement = document.getElementById("count");
+    var count = 0;
+
+    function updateCounter() {
+      count++;
+      countElement.innerHTML = count;
+    }
+
+    setInterval(updateCounter, 1000);
+  </script>
 </body>
 </html>
-
